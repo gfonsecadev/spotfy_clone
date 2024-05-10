@@ -1,12 +1,12 @@
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap*/
 
-@media (max-width: 575.99px) { 
-	h1{
+@media (max-width: 575.99px) {
+	h1 {
 		font-size: 3em;
 	}
 
-	section#capa button{
+	section#capa button {
 		width: 17em;
 		margin-bottom: 10px;
 		font-size: 1.4em;
@@ -14,82 +14,122 @@
 
 	}
 
-	
- }
+	#rotacionar {
+		height: 250px;
+		margin-top: 20px;
+	}
+
+	#rotacionar>img {
+		height: 90%;
+	}
+
+	.redes {
+		height: 25px;
+	}
+
+	footer h4 {
+		font-size: 18px;
+	}
+
+	footer ul>li>a {
+		font-size: 13px;
+	}
+
+
+}
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-	h1{
+@media (min-width: 576px) {
+	h1 {
 		font-size: 3.5em;
 	}
 
-	section#capa button{
-		
+	section#capa button {
+
 		font-size: 1.1em;
 		padding: 0.5rem 1rem;
-		line-height: 0.4;}
-
-
+		line-height: 0.4;
 	}
-	
- }
+
+	#rotacionar {
+		height: 250px;
+		margin-top: 20px;
+	}
+
+	#rotacionar>img {
+		height: 90%;
+	}
+
+	.redes {
+		height: 30px;
+	}
+
+}
+
+
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-	h1{
+@media (min-width: 768px) {
+	h1 {
 		font-size: 4em;
 	}
 
-	section#capa button{
-		
+	section#capa button {
+
 		font-size: 1.3em;
 		padding: 0.5rem 1rem;
-		line-height: 0.4;}
-  
-  	
+		line-height: 0.4;
+	}
 
-	
-	
- }
+	#rotacionar {
+		height: 450px;
+		margin-top: 70px;
+	}
+
+	#rotacionar>img {
+		height: 85%;
+	}
+
+
+
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-	
-	h1{
+@media (min-width: 992px) {
+
+	h1 {
 		font-size: 5em;
 	}
 
-	section#capa button{
-		
+	section#capa button {
+
 		font-size: 1.7em;
 		padding: 0.5rem 1rem;
-		line-height: 0.4;}
-
-
+		line-height: 0.4;
 	}
 
+
+}
+
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-	h1{
+@media (min-width: 1200px) {
+	h1 {
 		font-size: 6em;
 	}
 
-	section#capa button{
-		
+	section#capa button {
+
 		font-size: 2.1em;
 		padding: 1.5rem 1rem;
-		line-height: 0.6px;}
+		line-height: 0.6px;
+	}
 
 
- }
+}
 
 
 /* XX-Large devices (larger desktops, 1400px and up)*/
-@media (min-width: 1400px) { 
-	
-
-	
- }
+@media (min-width: 1400px) {}
 
 /*fim media queries*/
 
@@ -99,32 +139,35 @@
 
 
 
-html,body,#capa{
+html,
+body,
+#capa {
 	height: 100%;
 }
 
 
-body{
+body {
 	background-image: url(../imagens/capa.png),
-				url(../imagens/ruido.png),
-				linear-gradient(85deg, purple,white);
+		url(../imagens/ruido.png),
+		linear-gradient(85deg, purple, white);
 	background-attachment: fixed;
 
 }
 
-h1{
+h1 {
 	font-weight: 900;
-	letter-spacing:-0.05em;
+	letter-spacing: -0.05em;
 	color: white;
 	margin-bottom: 10px;
 
 }
 
-p{
-	text-align:justify;
+p {
+	text-align: justify;
 }
 
-h2,h3{
+h2,
+h3 {
 	font-weight: 700;
 	letter-spacing: -0.8px;
 }
@@ -133,20 +176,20 @@ h2,h3{
 
 /*inicio cabecalho*/
 
-header{
-	background:rgba(0,0,0, 0.3);
+header {
+	background: rgba(0, 0, 0, 0.3);
 }
 
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
 	color: white;
 
 }
 
-#divisor{
+#divisor {
 	width: 1px;
 	background: black;
-	margin:12px 5px;
+	margin: 12px 5px;
 }
 
 
@@ -156,38 +199,38 @@ header{
 /*capa inicio*/
 
 
-#btn_azul{
+#btn_azul {
 	background: blue;
 	color: white;
 	height: 50px;
-	border: 1px solid white; white;
-	-webkit-border-radius:50px;
-	-moz-border-radius:50px;
+	border: 1px solid white;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
 	border-radius: 100px;
 	padding: 10px;
 	transition: all 1s;
 }
 
-#btn_transparente{
+#btn_transparente {
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
 	height: 50px;
 	border: 1px solid white;
-	-webkit-border-radius:50px;
-	-moz-border-radius:50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
 	border-radius: 50px;
-	
+
 	transition: all 1s;
 }
 
 button:hover#btn_azul {
-	background:rgba(0, 0,255, 0.5) ;
+	background: rgba(0, 0, 255, 0.5);
 	cursor: pointer;
 
 }
 
 button:hover#btn_transparente {
-	background:rgba(0, 0,0, 0.3) ;
+	background: rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 
 }
@@ -195,50 +238,48 @@ button:hover#btn_transparente {
 /*fim capa inicio*/
 
 /*inicio serviços*/
-#servicos h2,h3{
+#servicos h2,
+h3 {
 	color: #610094;
 }
 
 
 
 /*inicio recursos*/
-#recursos h2, #recursos p{
+#recursos h2,
+#recursos p {
 	color: white;
 }
-#recursos h2{
+
+#recursos h2 {
 	font-size: 2.5em;
 }
 
-#recursos h3{
+#recursos h3 {
 	color: #1a8aad;
 	font-size: 2em;
 }
-#rotacionar{
-	border: 2px solid blue;
+
+#rotacionar {
 	transform: rotate(45deg);
 	text-align: center;
 }
 
-footer{
+footer {
 	background: black;
 }
 
 /*inicio rodapé*/
-footer a{
+footer a {
 	color: white;
 }
 
-footer h4{
+footer h4 {
 	color: gray;
 	opacity: 0.8;
 }
 
-#d{
+#d {
 	position: absolute;
 	top: 300px;
 }
-
-
-
-
-
